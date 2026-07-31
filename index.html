@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>InterviewOS — Vet for high-signal candidates in the age of AI</title>
+<meta name="description" content="InterviewOS turns raw interviewer notes into rubric-scored, evidence-backed candidate ratings. Every score traces back to a quote, not a gut feeling.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ============ NAV ============ -->
+  <div class="nav-wrap">
+    <nav class="nav">
+      <a class="nav__brand" href="#top" aria-label="InterviewOS home">
+        <span class="nav__dot"></span>
+        <span class="nav__wordmark">InterviewOS</span>
+      </a>
+      <div class="nav__links"></div>
+      <div class="nav__actions">
+        <a href="#cta" class="btn btn--pill btn--primary">Book a demo</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <p class="eyebrow"><span class="eyebrow__dot"></span>Evidence-backed interview scoring</p>
+    <h1 class="hero__title">Vet for high-signal<br>&nbsp;candidates in the age of AI</h1>
+    <div class="hero__copy">
+      <p class="hero__sub">InterviewOS turns raw interviewer notes into rubric-scored, evidence-backed candidate ratings. Every score traces back to a quote, not a gut feeling.</p>
+      <div class="hero__actions">
+        <a href="#cta" class="btn btn--primary">Get started</a>
+        <a href="#cta" class="btn btn--secondary">Book a demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HERO SCREEN MOCKUP ============ -->
+  <section class="hero-media">
+    <div class="browser-frame">
+      <div class="browser-frame__bar"><span class="browser-frame__dot"></span></div>
+      <div class="screen-frame" data-screen-frame>
+        <div class="screen-inner" data-screen-inner>
+          <div class="screen-mount" data-component="InterviewReviewAIEvidence"></div>
+        </div>
+      </div>
+    </div>
+    <div class="browser-frame__tab" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ============ SIGNALS ============ -->
+  <section class="section" id="signals">
+    <div class="split split--signals">
+      <div>
+        <p class="eyebrow"><span class="eyebrow__dot"></span>9 hiring signals</p>
+        <h3 class="h3">AI-assisted signal based hiring</h3>
+      </div>
+      <p class="body-muted">Behavioral signals most scorecards miss entirely — each one scored against the transcript.</p>
+    </div>
+
+    <p class="ai-note"><span class="ai-note__spark">✦</span>Scores are drafted by AI from the transcript — the interviewer confirms or overrides every one.</p>
+
+    <div class="signals-grid">
+
+      <article class="signal-card">
+        <div class="signal-card__top">
+          <div class="signal-card__label">
+            <span class="signal-card__title">Decision quality</span>
+            <span class="signal-card__desc">Did they weigh trade-offs, or just describe what they did.</span>
+          </div>
+          <div class="signal-card__score">
+            <span class="signal-card__score-tag"><span class="signal-card__spark">✦</span>ai score</span>
+            <span class="signal-card__score-val">4<small>/5</small></span>
+          </div>
+        </div>
+        <blockquote class="signal-card__quote">"We picked sharding over a bigger box because reads were 100:1."</blockquote>
+      </article>
+
+      <article class="signal-card">
+        <div class="signal-card__top">
+          <div class="signal-card__label">
+            <span class="signal-card__title">Adaptability</span>
+            <span class="signal-card__desc">Do they update their thinking when constraints change.</span>
+          </div>
+          <div class="signal-card__score">
+            <span class="signal-card__score-tag"><span class="signal-card__spark">✦</span>ai score</span>
+            <span class="signal-card__score-val">3<small>/5</small></span>
+          </div>
+        </div>
+        <blockquote class="signal-card__quote">"If writes spike, that plan breaks — let me redo the estimate."</blockquote>
+      </article>
+
+      <article class="signal-card">
+        <div class="signal-card__top">
+          <div class="signal-card__label">
+            <span class="signal-card__title">Ownership language</span>
+            <span class="signal-card__desc">"I decided" versus "we were asked."</span>
+          </div>
+          <div class="signal-card__score">
+            <span class="signal-card__score-tag"><span class="signal-card__spark">✦</span>ai score</span>
+            <span class="signal-card__score-val">5<small>/5</small></span>
+          </div>
+        </div>
+        <blockquote class="signal-card__quote">"I made the call to cut the feature and told the team why."</blockquote>
+      </article>
+
+      <article class="signal-card">
+        <div class="signal-card__top">
+          <div class="signal-card__label">
+            <span class="signal-card__title">Knowledge boundaries</span>
+            <span class="signal-card__desc">Do they know what they don't know.</span>
+          </div>
+          <div class="signal-card__score">
+            <span class="signal-card__score-tag"><span class="signal-card__spark">✦</span>ai score</span>
+            <span class="signal-card__score-val">4<small>/5</small></span>
+          </div>
+        </div>
+        <blockquote class="signal-card__quote">"I haven't run Kafka in prod — here's how I'd de-risk it."</blockquote>
+      </article>
+
+      <article class="signal-card">
+        <div class="signal-card__top">
+          <div class="signal-card__label">
+            <span class="signal-card__title">Business awareness</span>
+            <span class="signal-card__desc">Do technical calls connect to business impact.</span>
+          </div>
+          <div class="signal-card__score">
+            <span class="signal-card__score-tag"><span class="signal-card__spark">✦</span>ai score</span>
+            <span class="signal-card__score-val">3<small>/5</small></span>
+          </div>
+        </div>
+        <blockquote class="signal-card__quote">"A 200ms redirect costs us conversions, so p99 was the target."</blockquote>
+      </article>
+
+      <article class="signal-card">
+        <div class="signal-card__top">
+          <div class="signal-card__label">
+            <span class="signal-card__title">Practical judgment</span>
+            <span class="signal-card__desc">Do they balance the ideal solution against real constraints.</span>
+          </div>
+          <div class="signal-card__score">
+            <span class="signal-card__score-tag"><span class="signal-card__spark">✦</span>ai score</span>
+            <span class="signal-card__score-val">4<small>/5</small></span>
+          </div>
+        </div>
+        <blockquote class="signal-card__quote">"Two engineers, six weeks — so we shipped the boring version."</blockquote>
+      </article>
+
+      <article class="signal-card">
+        <div class="signal-card__top">
+          <div class="signal-card__label">
+            <span class="signal-card__title">Evidence consistency</span>
+            <span class="signal-card__desc">Do their stories hold together under follow-up.</span>
+          </div>
+          <div class="signal-card__score">
+            <span class="signal-card__score-tag"><span class="signal-card__spark">✦</span>ai score</span>
+            <span class="signal-card__score-val">4<small>/5</small></span>
+          </div>
+        </div>
+        <blockquote class="signal-card__quote">3 accounts of the same project · no contradictions flagged</blockquote>
+      </article>
+
+      <article class="signal-card">
+        <div class="signal-card__top">
+          <div class="signal-card__label">
+            <span class="signal-card__title">Initiative</span>
+            <span class="signal-card__desc">Do they surface problems no one assigned them.</span>
+          </div>
+          <div class="signal-card__score">
+            <span class="signal-card__score-tag"><span class="signal-card__spark">✦</span>ai score</span>
+            <span class="signal-card__score-val">2<small>/5</small></span>
+          </div>
+        </div>
+        <blockquote class="signal-card__quote">"Nobody asked, but the retry logic was silently dropping jobs."</blockquote>
+      </article>
+
+      <article class="signal-card">
+        <div class="signal-card__top">
+          <div class="signal-card__label">
+            <span class="signal-card__title">Technical communication</span>
+            <span class="signal-card__desc">Can they actually explain it.</span>
+          </div>
+          <div class="signal-card__score">
+            <span class="signal-card__score-tag"><span class="signal-card__spark">✦</span>ai score</span>
+            <span class="signal-card__score-val">5<small>/5</small></span>
+          </div>
+        </div>
+        <blockquote class="signal-card__quote">"Think of the cache as a receipt drawer for hot links."</blockquote>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ EVIDENCE ENGINE ============ -->
+  <section class="section" id="evidence">
+    <hr class="hr">
+    <p class="eyebrow"><span class="eyebrow__dot"></span>The evidence extraction engine</p>
+    <div class="split split--evidence">
+      <h2 class="h2">Map candidate responses directly to your hiring rubric</h2>
+      <div class="stack">
+        <p class="lede">The evidence extraction engine maps raw interviewer notes to your rubric automatically, with a confidence score on every match.</p>
+        <p class="body-muted">Stop asking interviewers to remember and summarize. InterviewOS's pipeline reads notes and transcripts, matches statements to rubric criteria, and shows exactly which quote supports which score.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LIVE INTERVIEW INTELLIGENCE ============ -->
+  <section class="section" id="live">
+    <hr class="hr">
+    <p class="eyebrow"><span class="eyebrow__dot"></span>Live interview intelligence</p>
+    <div class="split split--live">
+      <h2 class="h2">Deeper questions,<br>in real time.</h2>
+      <div class="stack">
+        <p class="lede">Real-time transcription feeds live follow-up probes, so interviewers push for depth instead of settling for a surface answer.&nbsp; Make the most of your interview with higher-signal questions.</p>
+      </div>
+    </div>
+
+    <div class="media-frame">
+      <div class="screen-frame screen-frame--rounded" data-screen-frame>
+        <div class="screen-inner" data-screen-inner>
+          <div class="screen-mount" data-component="InterviewBehavioral"></div>
+          <div class="live-overlay live-overlay--video">
+            <img src="assets/candidate-video.svg" alt="Candidate on camera during a live technical interview" class="live-overlay__img">
+            <div class="live-chip">
+              <span class="live-chip__dot"></span>
+              <span class="live-chip__label">Priya Nair · live</span>
+            </div>
+            <div class="live-self-box">
+              <span class="live-self-box__label">Your video</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="caption-line"><span class="caption-line__dot"></span>Live interview — suggested follow-up probes, tagged to the signal being tested</p>
+
+    <div class="split split--live-sub">
+      <h3 class="h3">AI-assisted technical interviews, fully observed.</h3>
+      <p class="body-muted">For coding and technical rounds, InterviewOS lets candidates use AI assistance, and monitors exactly what they ask and how they use it. See how a candidate collaborates with AI, not just whether they can code without it.</p>
+    </div>
+
+    <div class="media-frame">
+      <div class="screen-frame screen-frame--rounded" data-screen-frame>
+        <div class="screen-inner" data-screen-inner>
+          <div class="screen-mount" data-component="TechnicalInterviewCodingAIToggle"></div>
+          <div class="live-overlay live-overlay--webcam">
+            <img src="assets/candidate-webcam.svg" alt="Candidate on webcam during a technical interview" class="live-overlay__img">
+            <div class="live-chip live-chip--sm">
+              <span class="live-chip__dot live-chip__dot--sm"></span>
+              <span class="live-chip__label live-chip__label--sm">Devin Okafor</span>
+            </div>
+            <div class="live-self-box live-self-box--sm">
+              <span class="live-self-box__label live-self-box__label--sm">You</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="caption-line"><span class="caption-line__dot"></span>Technical round — every AI prompt the candidate sends, logged beside the code</p>
+  </section>
+
+  <!-- ============ FITS YOUR PROCESS ============ -->
+  <section class="section" id="process">
+    <hr class="hr">
+    <p class="eyebrow"><span class="eyebrow__dot"></span>Fits your existing process</p>
+    <div class="split split--process">
+      <h2 class="h2">Not another siloed application.</h2>
+      <p class="lede">Import roles straight from your ATS and run every round off questions your team already trusts.&nbsp; Fits in seamlessly with your existing hiring workflows for a low friction adoption.</p>
+    </div>
+  </section>
+
+  <!-- ============ CLOSING CTA ============ -->
+  <section class="section" id="cta">
+    <div class="cta-block">
+      <h2 class="cta-block__title">Hire higher signal<br>&nbsp;candidates today.</h2>
+      <p class="cta-block__sub">See how InterviewOS scores your next interview.</p>
+      <!-- TODO: swap for the real scheduling link (e.g. Calendly) once available -->
+      <a href="mailto:hello@interviewos.com" class="btn btn--primary">Book a demo</a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <hr class="hr">
+    <div class="footer__row">
+      <a class="footer__brand" href="#top" aria-label="InterviewOS home">
+        <span class="footer__dot"></span>
+        <span class="footer__wordmark">InterviewOS</span>
+      </a>
+    </div>
+  </footer>
+
+</div>
+
+<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+<script src="screens/Components.bundle.js"></script>
+<script src="js/screens.js"></script>
+</body>
+</html>

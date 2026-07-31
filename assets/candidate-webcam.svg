@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 259 152" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="bg2" cx="60%" cy="30%" r="90%">
+      <stop offset="0%" stop-color="#232321"/>
+      <stop offset="100%" stop-color="#181818"/>
+    </radialGradient>
+  </defs>
+  <rect width="259" height="152" fill="url(#bg2)"/>
+  <circle cx="160" cy="55" r="24" fill="none" stroke="#454543" stroke-width="1.5"/>
+  <path d="M 118 130 Q 160 88 202 130 L 202 145 L 118 145 Z" fill="none" stroke="#454543" stroke-width="1.5"/>
+  <text x="12" y="140" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="8" letter-spacing="0.3" fill="#6B6B6B">placeholder</text>
+</svg>
