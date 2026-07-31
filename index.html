@@ -46,10 +46,11 @@
   <section class="hero-media">
     <div class="browser-frame">
       <div class="browser-frame__bar"><span class="browser-frame__dot"></span></div>
-      <div class="screen-frame" data-screen-frame>
-        <div class="screen-inner" data-screen-inner>
-          <div class="screen-mount" data-component="InterviewReviewAIEvidence"></div>
-        </div>
+      <div class="screen-frame">
+        <picture>
+          <source srcset="assets/screens/interview-behavioral.webp" type="image/webp">
+          <img src="assets/screens/interview-behavioral.jpg" alt="InterviewOS live interview screen: real-time transcript, AI copilot observations, and both participants on camera" class="screen-shot" loading="eager">
+        </picture>
       </div>
     </div>
     <div class="browser-frame__tab" aria-hidden="true"><span></span></div>
@@ -223,23 +224,14 @@
     </div>
 
     <div class="media-frame">
-      <div class="screen-frame screen-frame--rounded" data-screen-frame>
-        <div class="screen-inner" data-screen-inner>
-          <div class="screen-mount" data-component="InterviewBehavioral"></div>
-          <div class="live-overlay live-overlay--video">
-            <img src="assets/candidate-video.svg" alt="Candidate on camera during a live technical interview" class="live-overlay__img">
-            <div class="live-chip">
-              <span class="live-chip__dot"></span>
-              <span class="live-chip__label">Priya Nair · live</span>
-            </div>
-            <div class="live-self-box">
-              <span class="live-self-box__label">Your video</span>
-            </div>
-          </div>
-        </div>
+      <div class="screen-frame screen-frame--rounded">
+        <picture>
+          <source srcset="assets/screens/technical-interview.webp" type="image/webp">
+          <img src="assets/screens/technical-interview.jpg" alt="InterviewOS technical interview screen with a live code editor, AI copilot chat, and the candidate on camera" class="screen-shot" loading="lazy">
+        </picture>
       </div>
     </div>
-    <p class="caption-line"><span class="caption-line__dot"></span>Live interview — suggested follow-up probes, tagged to the signal being tested</p>
+    <p class="caption-line"><span class="caption-line__dot"></span>Technical round — AI copilot answers complexity questions live, right beside the code</p>
 
     <div class="split split--live-sub">
       <h3 class="h3">AI-assisted technical interviews, fully observed.</h3>
@@ -247,23 +239,14 @@
     </div>
 
     <div class="media-frame">
-      <div class="screen-frame screen-frame--rounded" data-screen-frame>
-        <div class="screen-inner" data-screen-inner>
-          <div class="screen-mount" data-component="TechnicalInterviewCodingAIToggle"></div>
-          <div class="live-overlay live-overlay--webcam">
-            <img src="assets/candidate-webcam.svg" alt="Candidate on webcam during a technical interview" class="live-overlay__img">
-            <div class="live-chip live-chip--sm">
-              <span class="live-chip__dot live-chip__dot--sm"></span>
-              <span class="live-chip__label live-chip__label--sm">Devin Okafor</span>
-            </div>
-            <div class="live-self-box live-self-box--sm">
-              <span class="live-self-box__label live-self-box__label--sm">You</span>
-            </div>
-          </div>
-        </div>
+      <div class="screen-frame screen-frame--rounded">
+        <picture>
+          <source srcset="assets/screens/candidate-scorecard.webp" type="image/webp">
+          <img src="assets/screens/candidate-scorecard.jpg" alt="Candidate scorecard showing the AI interview summary, hiring signal ratings, and full transcript" class="screen-shot" loading="lazy">
+        </picture>
       </div>
     </div>
-    <p class="caption-line"><span class="caption-line__dot"></span>Technical round — every AI prompt the candidate sends, logged beside the code</p>
+    <p class="caption-line"><span class="caption-line__dot"></span>Completed scorecard — every signal rating traces back to a transcript quote</p>
   </section>
 
   <!-- ============ FITS YOUR PROCESS ============ -->
@@ -274,6 +257,29 @@
       <h2 class="h2">Not another siloed application.</h2>
       <p class="lede">Import roles straight from your ATS and run every round off questions your team already trusts.&nbsp; Fits in seamlessly with your existing hiring workflows for a low friction adoption.</p>
     </div>
+  </section>
+
+  <!-- ============ COMPARE CANDIDATES ============ -->
+  <section class="section" id="compare">
+    <hr class="hr">
+    <p class="eyebrow"><span class="eyebrow__dot"></span>Compare candidates side by side</p>
+    <div class="split split--compare">
+      <h2 class="h2">Stop skimming ten scorecards to make one call.</h2>
+      <div class="stack">
+        <p class="lede">Rank every candidate for a role on the same signals, weighted the way your team actually hires — then sort by fit and see exactly where each one separates from the pack.</p>
+        <p class="body-muted">Adjust signal weights per role and the ranking recalculates instantly. No spreadsheet exports, no re-scoring by hand.</p>
+      </div>
+    </div>
+
+    <div class="media-frame">
+      <div class="screen-frame screen-frame--rounded">
+        <picture>
+          <source srcset="assets/screens/compare-candidates.webp" type="image/webp">
+          <img src="assets/screens/compare-candidates.jpg" alt="Compare candidates screen showing signal weights and a ranked list of candidates by overall fit" class="screen-shot" loading="lazy">
+        </picture>
+      </div>
+    </div>
+    <p class="caption-line"><span class="caption-line__dot"></span>Signal-weighted ranking — set the weights once, every candidate re-sorts against them</p>
   </section>
 
   <!-- ============ CLOSING CTA ============ -->
@@ -299,9 +305,5 @@
 
 </div>
 
-<script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
-<script src="screens/Components.bundle.js"></script>
-<script src="js/screens.js"></script>
 </body>
 </html>
