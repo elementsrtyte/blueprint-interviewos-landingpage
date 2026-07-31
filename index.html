@@ -3,13 +3,60 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>InterviewOS — Vet for high-signal candidates in the age of AI</title>
 <meta name="description" content="InterviewOS turns raw interviewer notes into rubric-scored, evidence-backed candidate ratings. Every score traces back to a quote, not a gut feeling.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500;600;700&display=swap">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1F1F1F">
+
+<!-- NOTE: placeholder domain — replace https://interviewos.com with the real
+     production URL (here, in the JSON-LD block below, and in robots.txt /
+     sitemap.xml) before deploying. -->
+<link rel="canonical" href="https://interviewos.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="InterviewOS">
+<meta property="og:url" content="https://interviewos.com/">
+<meta property="og:title" content="InterviewOS — Vet for high-signal candidates in the age of AI">
+<meta property="og:description" content="InterviewOS turns raw interviewer notes into rubric-scored, evidence-backed candidate ratings. Every score traces back to a quote, not a gut feeling.">
+<meta property="og:image" content="https://interviewos.com/assets/og/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="InterviewOS — evidence-backed interview scoring, shown with a live interview review screen">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="InterviewOS — Vet for high-signal candidates in the age of AI">
+<meta name="twitter:description" content="InterviewOS turns raw interviewer notes into rubric-scored, evidence-backed candidate ratings. Every score traces back to a quote, not a gut feeling.">
+<meta name="twitter:image" content="https://interviewos.com/assets/og/og-image.jpg">
+<meta name="twitter:image:alt" content="InterviewOS — evidence-backed interview scoring, shown with a live interview review screen">
+
+<!-- Favicons -->
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "InterviewOS",
+  "url": "https://interviewos.com/",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "description": "InterviewOS turns raw interviewer notes into rubric-scored, evidence-backed candidate ratings. Every score traces back to a quote, not a gut feeling.",
+  "image": "https://interviewos.com/assets/og/og-image.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "InterviewOS",
+    "url": "https://interviewos.com/"
+  }
+}
+</script>
 </head>
 <body>
 
@@ -24,20 +71,20 @@
       </a>
       <div class="nav__links"></div>
       <div class="nav__actions">
-        <a href="#cta" class="btn btn--pill btn--primary">Book a demo</a>
+        <button type="button" class="btn btn--pill btn--primary" data-open-demo-modal>Book a demo</button>
       </div>
     </nav>
   </div>
 
+  <main>
+
   <!-- ============ HERO ============ -->
   <section class="hero" id="top">
-    <p class="eyebrow"><span class="eyebrow__dot"></span>Evidence-backed interview scoring</p>
     <h1 class="hero__title">Vet for high-signal<br>&nbsp;candidates in the age of AI</h1>
     <div class="hero__copy">
       <p class="hero__sub">InterviewOS turns raw interviewer notes into rubric-scored, evidence-backed candidate ratings. Every score traces back to a quote, not a gut feeling.</p>
       <div class="hero__actions">
-        <a href="#cta" class="btn btn--primary">Get started</a>
-        <a href="#cta" class="btn btn--secondary">Book a demo</a>
+        <button type="button" class="btn btn--primary" data-open-demo-modal>Book a demo</button>
       </div>
     </div>
   </section>
@@ -58,11 +105,10 @@
 
   <!-- ============ SIGNALS ============ -->
   <section class="section" id="signals">
-    <div class="split split--signals">
-      <div>
-        <p class="eyebrow"><span class="eyebrow__dot"></span>9 hiring signals</p>
-        <h3 class="h3">AI-assisted signal based hiring</h3>
-      </div>
+    <hr class="hr">
+    <p class="eyebrow"><span class="eyebrow__dot"></span>9 hiring signals</p>
+    <div class="split split--end">
+      <h2 class="h3">AI-assisted signal based hiring</h2>
       <p class="body-muted">Behavioral signals most scorecards miss entirely — each one scored against the transcript.</p>
     </div>
 
@@ -203,7 +249,7 @@
   <section class="section" id="evidence">
     <hr class="hr">
     <p class="eyebrow"><span class="eyebrow__dot"></span>The evidence extraction engine</p>
-    <div class="split split--evidence">
+    <div class="split split--start">
       <h2 class="h2">Map candidate responses directly to your hiring rubric</h2>
       <div class="stack">
         <p class="lede">The evidence extraction engine maps raw interviewer notes to your rubric automatically, with a confidence score on every match.</p>
@@ -216,7 +262,7 @@
   <section class="section" id="live">
     <hr class="hr">
     <p class="eyebrow"><span class="eyebrow__dot"></span>Live interview intelligence</p>
-    <div class="split split--live">
+    <div class="split split--start">
       <h2 class="h2">Deeper questions,<br>in real time.</h2>
       <div class="stack">
         <p class="lede">Real-time transcription feeds live follow-up probes, so interviewers push for depth instead of settling for a surface answer.&nbsp; Make the most of your interview with higher-signal questions.</p>
@@ -233,7 +279,7 @@
     </div>
     <p class="caption-line"><span class="caption-line__dot"></span>Technical round — AI copilot answers complexity questions live, right beside the code</p>
 
-    <div class="split split--live-sub">
+    <div class="split split--start split--stacked">
       <h3 class="h3">AI-assisted technical interviews, fully observed.</h3>
       <p class="body-muted">For coding and technical rounds, InterviewOS lets candidates use AI assistance, and monitors exactly what they ask and how they use it. See how a candidate collaborates with AI, not just whether they can code without it.</p>
     </div>
@@ -253,7 +299,7 @@
   <section class="section" id="process">
     <hr class="hr">
     <p class="eyebrow"><span class="eyebrow__dot"></span>Fits your existing process</p>
-    <div class="split split--process">
+    <div class="split split--end">
       <h2 class="h2">Not another siloed application.</h2>
       <p class="lede">Import roles straight from your ATS and run every round off questions your team already trusts.&nbsp; Fits in seamlessly with your existing hiring workflows for a low friction adoption.</p>
     </div>
@@ -263,7 +309,7 @@
   <section class="section" id="compare">
     <hr class="hr">
     <p class="eyebrow"><span class="eyebrow__dot"></span>Compare candidates side by side</p>
-    <div class="split split--compare">
+    <div class="split split--start">
       <h2 class="h2">Stop skimming ten scorecards to make one call.</h2>
       <div class="stack">
         <p class="lede">Rank every candidate for a role on the same signals, weighted the way your team actually hires — then sort by fit and see exactly where each one separates from the pack.</p>
@@ -287,10 +333,11 @@
     <div class="cta-block">
       <h2 class="cta-block__title">Hire higher signal<br>&nbsp;candidates today.</h2>
       <p class="cta-block__sub">See how InterviewOS scores your next interview.</p>
-      <!-- TODO: swap for the real scheduling link (e.g. Calendly) once available -->
-      <a href="mailto:hello@interviewos.com" class="btn btn--primary">Book a demo</a>
+      <button type="button" class="btn btn--primary" data-open-demo-modal>Book a demo</button>
     </div>
   </section>
+
+  </main>
 
   <!-- ============ FOOTER ============ -->
   <footer class="footer">
@@ -303,7 +350,33 @@
     </div>
   </footer>
 
+  <!-- ============ BOOK-A-DEMO MODAL (placeholder — Calendly integration pending) ============ -->
+  <div class="modal-overlay" id="demo-modal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="demo-modal-title">
+      <button type="button" class="modal__close" data-close-demo-modal aria-label="Close">&times;</button>
+      <p class="eyebrow"><span class="eyebrow__dot"></span>Book a demo</p>
+      <h2 id="demo-modal-title" class="modal__title">Find a time that works</h2>
+      <p class="modal__sub">Live scheduling is coming soon — this is a preview of what booking will look like. For now, email us and we'll find a time by hand.</p>
+
+      <div class="mock-cal" aria-hidden="true">
+        <div class="mock-cal__header">
+          <span class="mock-cal__month" data-cal-month></span>
+        </div>
+        <div class="mock-cal__grid" data-cal-grid></div>
+        <div class="mock-cal__slots">
+          <span class="mock-cal__slot">9:00 AM</span>
+          <span class="mock-cal__slot">11:30 AM</span>
+          <span class="mock-cal__slot">2:00 PM</span>
+          <span class="mock-cal__slot">4:15 PM</span>
+        </div>
+      </div>
+
+      <a href="mailto:hello@interviewos.com" class="modal__email-link">Or email hello@interviewos.com to book directly →</a>
+    </div>
+  </div>
+
 </div>
 
+<script src="js/main.js"></script>
 </body>
 </html>

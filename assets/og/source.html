@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OG image source — regenerate via headless screenshot at 1200x630</title>
+<link rel="stylesheet" href="../../css/tokens.css">
+<style>
+  html, body { margin: 0; padding: 0; }
+  body {
+    width: 1200px;
+    height: 630px;
+    background: #1F1F1F;
+    font-family: var(--font-body);
+    overflow: hidden;
+    position: relative;
+  }
+  .wrap {
+    position: relative;
+    width: 1200px;
+    height: 630px;
+    display: flex;
+    align-items: center;
+    padding: 0 72px;
+    box-sizing: border-box;
+  }
+  .brand {
+    position: absolute;
+    top: 48px;
+    left: 72px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .brand__dot { width: 26px; height: 26px; border-radius: 7px; background: #C496FF; }
+  .brand__word {
+    font-family: var(--font-display);
+    font-size: 20px;
+    letter-spacing: -0.01em;
+    color: #F7F5F2;
+  }
+  .copy { width: 560px; }
+  .eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+  .eyebrow__dot { width: 8px; height: 8px; border-radius: 3px; background: #C496FF; }
+  .eyebrow__label {
+    font-family: var(--font-mono);
+    font-size: 15px;
+    color: #C496FF;
+    letter-spacing: 0.01em;
+  }
+  h1 {
+    margin: 0 0 20px;
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 1.12;
+    letter-spacing: -0.015em;
+    color: #F7F5F2;
+  }
+  p {
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: 19px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: #B8B8B8;
+    max-width: 520px;
+  }
+  .shot {
+    position: absolute;
+    right: -60px;
+    top: 50%;
+    transform: translateY(-50%) rotate(2.5deg);
+    width: 580px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #454543;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.55);
+  }
+  .shot img { display: block; width: 100%; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand"><span class="brand__dot"></span><span class="brand__word">InterviewOS</span></div>
+    <div class="copy">
+      <div class="eyebrow"><span class="eyebrow__dot"></span><span class="eyebrow__label">Evidence-backed interview scoring</span></div>
+      <h1>Vet for high-signal candidates in the age of AI</h1>
+      <p>InterviewOS turns raw interviewer notes into rubric-scored, evidence-backed candidate ratings. Every score traces back to a quote, not a gut feeling.</p>
+    </div>
+    <div class="shot"><img src="../screens/interview-behavioral.jpg"></div>
+  </div>
+</body>
+</html>
