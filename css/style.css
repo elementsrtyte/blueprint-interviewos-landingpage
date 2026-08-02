@@ -1,6 +1,8 @@
 * { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; background: var(--bg); }
+html { background: var(--bg); }
 body {
+  margin: 0;
+  padding: 0;
   color: var(--fg);
   font-family: var(--font-body);
   min-height: 100vh;
@@ -8,6 +10,35 @@ body {
 }
 a { color: var(--fg); text-decoration: none; }
 ::selection { background: var(--accent); color: var(--fg-inverse); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============ BACKGROUND GRID ============
+   A faint grid wallpapers the whole viewport, but only where a soft
+   circle around the cursor unmasks it — everywhere else it's fully
+   invisible. --mx/--my are set by main.js on mousemove. */
+.bg-grid {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, rgba(247,245,242,0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(247,245,242,0.07) 1px, transparent 1px);
+  background-size: 48px 48px;
+  -webkit-mask-image: radial-gradient(630px circle at var(--mx, 50%) var(--my, 50%), #000 0%, transparent 72%);
+  mask-image: radial-gradient(630px circle at var(--mx, 50%) var(--my, 50%), #000 0%, transparent 72%);
+  opacity: 0;
+  transition: opacity var(--dur-slow) var(--ease-brand);
+}
+.bg-grid.is-active { opacity: 1; }
 
 img { max-width: 100%; display: block; }
 
@@ -42,6 +73,12 @@ img { max-width: 100%; display: block; }
   backdrop-filter: var(--backdrop-blur);
   -webkit-backdrop-filter: var(--backdrop-blur);
   border: 1px solid var(--border-subtle);
+  transition: border-color var(--dur-base) var(--ease-brand), background-color var(--dur-base) var(--ease-brand), box-shadow var(--dur-base) var(--ease-brand);
+}
+.nav--scrolled {
+  border-color: var(--border);
+  background: rgba(36,36,36,0.82);
+  box-shadow: var(--shadow-md);
 }
 .nav__brand {
   display: flex;
@@ -88,19 +125,21 @@ img { max-width: 100%; display: block; }
   font-size: 15px;
   padding: 16px 24px;
   border-radius: var(--radius-md);
-  transition: opacity var(--dur-base) var(--ease-brand), border-color var(--dur-base) var(--ease-brand);
+  transition: opacity var(--dur-base) var(--ease-brand), border-color var(--dur-base) var(--ease-brand), transform var(--dur-base) var(--ease-brand), box-shadow var(--dur-base) var(--ease-brand);
 }
 .btn--primary {
   background: var(--accent);
   color: var(--fg-inverse);
   border: 1px solid transparent;
 }
-.btn--primary:hover { opacity: 0.8; }
+.btn--primary:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(196,150,255,0.35); }
+.btn--primary:active { transform: translateY(0); box-shadow: 0 2px 6px rgba(196,150,255,0.25); }
 .btn--secondary {
   color: var(--fg);
   border: 1px solid var(--border);
 }
-.btn--secondary:hover { border-color: var(--fg); }
+.btn--secondary:hover { border-color: var(--fg); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+.btn--secondary:active { transform: translateY(0); box-shadow: none; }
 .btn--pill {
   font-size: 13px;
   padding: 11px 18px;
@@ -320,6 +359,8 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
 }
 .signal-card {
+  position: relative;
+  overflow: hidden;
   background: var(--bg-card);
   padding: 28px;
   display: flex;
@@ -327,6 +368,16 @@ img { max-width: 100%; display: block; }
   gap: 16px;
   transition: background var(--dur-base) var(--ease-brand);
 }
+.signal-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(240px circle at var(--spot-x, 50%) var(--spot-y, 50%), rgba(196,150,255,0.12), transparent 70%);
+  opacity: 0;
+  transition: opacity var(--dur-base) var(--ease-brand);
+  pointer-events: none;
+}
+.signal-card:hover::before { opacity: 1; }
 .signal-card:hover { background: #202020; }
 .signal-card__top {
   display: flex;
